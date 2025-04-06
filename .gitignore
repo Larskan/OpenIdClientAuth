@@ -1,0 +1,35 @@
+# Node modules for the installed dependencies
+node_modules/
+
+# TypeScript build output - Keeps compiled .js files out of Git
+dist/
+build/
+
+# Environment variables - Secret Keys and Client credentials stay safe
+.env
+
+# Logs - No clutter from local dev environment
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Handlebars cache (if any)
+.handlebars-cache/
+
+# Optional: lock files (if you're not using them intentionally)
+# package-lock.json
+# yarn.lock
