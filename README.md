@@ -40,11 +40,9 @@ Called by Keycloak after user logs in
 
 Reads auth code and state from URL and verifies that the state is valid and retrieves the matching codeVerifier from cache
 
-Sends request to Keycloak to exchange the code for tokens and verifies the id_token using Keycloaks public key
+Sends request to Keycloak to exchange the code for tokens and verifies the id_token using Keycloaks public key - Here the Token is decoded and verified, if successful, it stores user info as a cookie. 
 
 Fetches user info from Keycloak using the access_token and stores user info in a secure cooke(user) for later.
-
-Token is decoded and verified, if successful, it stores user info as a cookie. 
 
 Redirects the user to /finish to prove that login worked with Auth
 
