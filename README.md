@@ -26,7 +26,7 @@ npm install --save jwks-rsa
 
 Need to have Keycloaks set up with a Client and Docker running
 
-# Run
+# Enter the index.ts and run it
 ```bash
 npm run dev
 ```
